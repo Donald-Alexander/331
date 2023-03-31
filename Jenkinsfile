@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'ruby -v'
+        sh 'ruby IncreaseVersion.rb Version.txt'
       }
     }
   }
